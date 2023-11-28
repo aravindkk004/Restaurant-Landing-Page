@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- web icon  -->
+    <link rel="icon" href="images/food1.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+    <header>
+        <h2><img src="images/food1.png" alt="food logo" loading="lazy">TastyBites</h2>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#menubar"><i class="fa-solid fa-utensils"></i>Menu</a></li>
+                <li><a href="#about"><i class="fa-solid fa-users"></i>About us</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="menu"></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+    </header>
+
+    <main>
+        <section id="home">
+            <p id="home_head">Traditional & Hygine</p>
+            <h3>For the love of <br><span>Delicious</span> food</h3>
+            <p>Come with family & feel the joy of mouthwatering food</p>
+            <a href="#menubar"><button>View Menu</button></a>
+        </section>
+
+        <section id="offer">
+            <h2 data-aos="fade">We offer Top Notch</h2>
+            <div class="offer_img">
+                <div class="imgs" data-aos="fade-right">
+                    <img src="images/service-1.jpg" alt="breakfast img" loading="lazy">
+                    <p>Breakfast</p>
+                    <p id="opt">View Menu</p>
+                </div>
+                <div class="imgs" data-aos="fade-up">
+                    <img src="images/service-2.jpg" alt="appitizers img" loading="lazy">
+                    <p>Appitizers</p>
+                    <p id="opt">View Menu</p>
+                </div>
+                <div class="imgs" data-aos="fade-left">
+                    <img src="images/service-3.jpg" alt="drinks img" loading="lazy">
+                    <p>Drinks</p>
+                    <p id="opt">View Menu</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="special">
+            <div class="left_special" data-aos="fade-right"> 
+                <img src="images/special-dish-banner.jpg" alt="lobster img" loading="lazy">
+            </div>
+            <div class="right_special" data-aos="fade-left">
+                <p>Special Dish</p>
+                <h2>Lobster Tortellini</h2>
+                <p id="desc_lobster">
+                    Indulge in the exquisite flavors of our signature dish, Lobster Tortellini. Crafted with the utmost care and precision, our delicate pasta envelopes succulent lobster meat, creating a luxurious and unforgettable dining experience. Served in a velvety sauce, this culinary masterpiece is a true celebration of fine Italian cuisine and the bounty of the sea. Elevate your dining experience at our restaurant and savor the taste of elegance with every bite of our Lobster Tortellini.
+                </p>
+                <p id="rate_of_dish">
+                    $40.00
+                </p>
+                <p id="offer_dish">
+                    $25.00
+                </p>
+                <button>Order</button>
+            </div>
+        </section>
+
+        <section id="menubar">
+            <h2 data-aos="fade">Our Delicious Menu</h2>
+            <div class="menulist">
+                <div class="menus" data-aos="fade-right">
+                    <div class="menu1">
+                        <img src="images/menu-1.png" alt="menu item 1" loading="lazy">
+                        <div class="item_detail">
+                            <h4>Greek Salad</h4>
+                            <p>Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.</p>
+                        </div>
+                        <p id="rate">$15.00</p>
+                    </div>
+                    <div class="menu1">
+                        <img src="images/menu-2.png" alt="menu item 2" loading="lazy">
+                        <div class="item_detail">
+                            <h4>Butternut Pumpkin</h4>
+                            <p>Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                        </div>
+                        <p id="rate">$7.00</p>
+                    </div>
+                    <div class="menu1">
+                        <img src="images/menu-3.png" alt="menu item 3" loading="lazy">
+                        <div class="item_detail">
+                            <h4>Olivas Rellenas
+                            </h4>
+                            <p>Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.</p>
+                        </div>
+                        <p id="rate">$20.00</p>
+                    </div>
+                </div>
+                <div class="menus1" data-aos="fade-left">
+                    <div class="menu1">
+                        <img src="images/menu-4.png" alt="menu item 4" loading="lazy">
+                        <div class="item_detail">
+                            <h4>Lasagne</h4>
+                            <p>Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                        </div>
+                        <p id="rate">$15.00</p>
+                    </div>
+                    <div class="menu1">
+                        <img src="images/menu-5.png" alt="menu item 5" loading="lazy">
+                        <div class="item_detail">
+                            <h4>Tokusen Wagyu</h4>
+                            <p>Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.</p>
+                        </div>
+                        <p id="rate">$7.00</p>
+                    </div>
+                    <div class="menu1">
+                        <img src="images/menu-6.png" alt="menu item 6" loading="lazy">
+                        <div class="item_detail">
+                            <h4>Opu Fish
+                            </h4>
+                            <p>Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.</p>
+                        </div>
+                        <p id="rate">$20.00</p>
+                    </div>
+                </div>
+            </div>
+            <button>View All</button>
+        </section>
+
+        <section id="about">
+            <div class="left_abt" data-aos="fade-right">
+                <h6>Our Story</h6>
+                <p>Discover the story behind Tasty Bites, a culinary gem with roots in a shared love for exceptional food. From our humble beginnings, we've evolved into a cherished dining destination, weaving together a tapestry of flavors inspired by both tradition and innovation. Tasty Bites is a celebration of culinary craftsmanship, where each dish reflects our dedication to quality and a passion for creating unforgettable dining moments. Join us on this gastronomic journey and experience the rich history of Tasty Bites through every delicious bite.</p>
+                <button>Read More</button>
+            </div>
+            <div class="right_abt" data-aos="fade-left">
+                <img src="images/about-banner.jpg" alt="hotel img" loading="lazy">
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="left_contact" data-aos="fade-right">
+                <h2>Contact Us</h2>
+                <div class="connect">
+                    <address><i class="fa-solid fa-location-dot"></i>112,AnnaNagar busstop opposite, Chennai.</address>
+                    <p><i class="fa-solid fa-envelope"></i>tasybite@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9787654112</p>
+                    <p><i class="fa-solid fa-tty"></i>0452-7890-265</p>
+
+                </div>
+                <p id="social">or connect with <span>Social Media</span></p>
+                <div class="icons">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="right_contact" data-aos="fade-left">
+                <p>Message</p>
+                <form action="" method="">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="subject" required>
+                    <textarea placeholder="Type Your message here"  id="textarea"></textarea>
+                    <p id="limit"><span id="input-chars">0</span>/500</p>
+                    <button type="submit" id="submit"><i class="fa-solid fa-paper-plane"></i>Send</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; TastyBites | All rights reserved.</p>
+    </footer>
+
+    <script>
+        let menu = document.getElementById("menu");
+        let nav = document.querySelector("nav")
+        menu.onclick = ()=>{
+            menu.classList.toggle("fa-xmark")
+            nav.classList.toggle("active");
+        }
+        const inputChars = document.querySelector("#input-chars"),
+            inputTextElem = document.querySelector("#textarea");
+
+        inputTextElem.addEventListener("input", (e) => {
+            inputChars.innerHTML = inputTextElem.value.length;
+        });
+
+        var items_list = document.querySelector('nav ul')
+        items_list.addEventListener('click',()=>{
+            nav.classList.toggle("active")
+            menu.classList.toggle("fa-xmark")
+        })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 250,
+            duration: 1000
+        });
+    </script>
+
+</body>
+</html>

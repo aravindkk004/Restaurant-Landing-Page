@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --unique: #e4c590;
+    --offer-bg: #0e0d0c;
+    --font: #fff;
+    --nor-bg: #212121;
+}
+
+::-webkit-scrollbar{
+	height: 8px;
+	width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--nor-bg);
+}
+::-webkit-scrollbar-thumb{
+	background: transparent;
+	border-radius: 5px;
+}
+body:hover::-webkit-scrollbar-thumb{
+    background-color: var(--unique);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--unique);
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background-color: var(--nor-bg);
+    padding: 20px;
+    z-index: 10;
+}
+header h2{
+    color: var(--font);
+    font-size: 3rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    font-family: 'Forum', serif;
+    color: var(--unique);
+}
+header h2 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+nav ul{
+    display: inline-flex;
+}
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--font);
+    font-size: 1.2rem;
+    position: relative;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+nav ul li a i{
+    margin-right: 10px;
+}
+nav ul li a:hover{
+    background-color: var(--unique);
+    color: var(--nor-bg);
+}
+#menu,
+#close{
+    color: var(--font);
+    font-size: 1.7rem;
+    display: none;
+}
+
+
+/* home page */
+
+#home{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(images/hero-slider-1.jpg);
+    background-size: cover;
+    position: relative;
+}
+#home #home_head{
+    font-size: 1.2rem;
+    color: var(--unique);
+    font-style:oblique;
+}
+#home h3{
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    font-size: 5rem;
+    text-align: center;
+    color: var(--font);
+    margin: 20px;
+}
+#home h3 span{
+    color: var(--unique);
+    font-family: 'Forum', serif;
+}
+#home p{
+    font-size: 1.9rem;
+    color: var(--font);
+    font-weight: 300;
+    text-align: center;
+}
+#home button,
+#menubar button,
+.right_special button,
+.left_abt button,
+.right_contact button{
+    padding: 10px 20px;
+    color: var(--font);
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 2px solid var(--unique);
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+#home button:hover,
+#menubar button:hover,
+.right_special button:hover,
+.left_abt button:hover,
+.right_contact button:hover{
+    background-color: var(--unique);
+    color: var(--nor-bg);
+}
+
+#offer{
+    overflow-x: hidden;
+    background-color: var(--offer-bg);
+    background-image: url(images/shape-5.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#offer h2{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--unique);
+    font-family: 'Forum', serif;
+    margin: 40px;
+}
+.offer_img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 20px;
+}
+.imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgs img{
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.imgs img:hover{
+    transform: translateY(-30px);
+}
+.imgs p{
+    font-size: 2.3rem;
+    color: var(--font);
+    font-family: 'Forum', serif;
+}
+#opt{
+    /* overflow-x: hidden; */
+    font-size: 1.2rem;
+    color: var(--unique);
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 20px;
+    font-family: 'poppins', serif;
+}
+#opt::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--unique);
+    transition: 0.5s;
+}
+#opt:hover::after{
+    width: 100%;
+}
+
+#special{
+    overflow-x: hidden;
+    background-color: var(--nor-bg);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.left_special,
+.right_special{
+    flex-basis: 50%;
+}
+.left_special{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_special img{
+   height: 640px;
+   width: 600px;
+   border: 2px solid var(--unique);
+   padding: 10px;
+}
+.right_special{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.right_special p{
+    font-size: 1.5rem;
+    color: var(--unique);
+    margin: 10px 0px;
+    font-family: 'Forum', serif;
+}
+.right_special h2{
+    font-size: 4rem;
+    color: var(--font);
+    font-family: 'Forum', serif;
+    font-weight: 400;
+}
+.right_special #desc_lobster{
+    font-size: 1.2rem;
+    color: var(--font);
+    line-height: 1.8rem;
+    font-family: 'Poppins', serif;
+}
+#rate_of_dish{
+    margin-top: 10px;
+    text-decoration: line-through;
+}
+#offer_dish{
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+
+
+#menubar{
+    overflow-x: hidden;
+    background: url(images/shape-6.png);
+    background-color: var(--offer-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#menubar h2{
+    color: var(--unique);
+    font-family: 'Forum', serif;
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 80px 0px 0px 10px;
+}
+.menulist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.menus,
+.menus1{
+    flex-basis: 40%;
+    padding: 10px  20px;
+}
+.menu1{
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+}
+.menu1 img{
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.item_detail h4{
+    color: var(--font);
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-family: 'Forum', serif;
+    transition: 0.5s;
+}
+.item_detail h4:hover{
+    color: var(--unique);
+}
+.item_detail p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--font);
+    cursor: default;
+}
+#rate{
+    font-size: 1.4rem;
+    font-family: 'Forum', serif;
+    color: var(--unique);
+}
+.menu1:hover img{
+    transform: scale(1.1);
+}
+.menu1:hover .item_detail h4{
+    color: var(--unique);
+}
+#menubar button{
+    margin-bottom: 50px;
+}
+#about{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: var(--nor-bg);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.left_abt{
+    flex-basis: 50%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.left_abt h6{
+    font-family: 'Forum', serif;
+    font-size: 2rem;
+    color: var(--unique);
+    margin: 40px;
+}
+.left_abt p{
+    font-size: 1.3rem;
+    color: var(--font);
+}
+.right_abt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact{
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--offer-bg);
+    background-image: url(images/shape-5.png);
+}
+.left_contact,
+.right_contact{
+    flex-basis: 50%;
+}
+.left_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left_contact h2{
+    font-family: 'Forum', serif;
+    font-size: 3rem;
+    color: var(--unique);
+    margin: 20px;
+}
+.connect p{
+    margin: 20px 0px;
+    font-size: 1.3rem;
+    color: var(--font);
+}
+address{
+    font-size: 1.3rem;
+    color: var(--font);
+}
+.connect i{
+    margin: 0px 20px;
+    font-size: 1.5rem;
+    color: var(--unique);
+}
+#social{
+    font-family: 'Forum', serif;
+    font-size: 1.3rem;
+    color: var(--font);
+}
+#social span{
+    color: var(--unique);
+    margin-bottom: 20px;
+}
+
+.icons i{
+    font-size: 2rem;
+    margin: 20px;
+    color: var(--font);
+}
+.icons i:hover{
+    color: var(--unique);
+}
+.right_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-left: 2px solid var(--unique);
+}
+.right_contact p{
+    font-size: 3rem;
+    color: var(--unique);
+    font-family: 'Forum',serif;
+}
+.right_contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.right_contact form input,
+textarea{
+    margin: 20px 0px;
+    height: 40px;
+    outline:  none;
+    width: 60%;
+    padding: 10px;
+    color: var(--offer-bg);
+    border-radius: 10px;
+    border: none;
+}
+#textarea{
+    height: 150px;
+    width: 60%;
+    resize: none;
+    position: relative;
+}
+#limit{
+    position: absolute;
+    right: 23%;
+    bottom: 20%;
+    font-size: 1rem;
+    color: red;
+}
+.right_contact form button i{
+    margin-right: 10px;
+}
+footer{
+    background-color: var(--nor-bg);
+    color: var(--font);
+    text-align: center;
+    padding: 20px;
+    cursor: default;
+}
+
+
+/* responsive */
+@media all and (max-width:1100px){
+    .left_special,
+    .right_special,
+    .desc-lobster,
+    .left_abt,
+    .right_abt{
+        flex-basis: 100%;
+        width: 100%;;
+    }
+    
+}
+@media all and (max-width: 1050px){
+    .menulist{
+        flex-direction: column;
+    }
+    .menus,
+    .menus1{
+        width: 70%;
+    }
+}
+@media all and (max-width:960px){
+    nav{
+        position: absolute;
+        right: -30%;
+        height: 100vh;
+        background-color: var(--nor-bg);
+        top: 20%;
+        width: 30%;
+        padding: 10px;
+        transition: 0.5s;
+    }
+    nav.active{
+        right: 0%;
+    }
+    nav ul{
+        display: block;
+        margin-top: 60px;
+    }
+    nav ul li{
+        margin: 20px;
+    }
+    #menu{
+        display: block;
+        z-index: 10;
+    }
+    
+}
+
+@media all and (max-width: 750px)
+{
+    #contact{
+        flex-direction: column;
+    }
+    .right_contact{
+        border-left: none;
+        width: 100%;
+    }
+}
+
+@media all and (max-width:690px){
+    nav{
+        right: -50%;
+        width: 50%;
+    }
+}
+
+@media all and (max-width:600px){
+    #home p{
+        font-size: 1.4rem;
+    }
+    #home h3{
+        font-size: 3.5rem;
+    }
+    .left_special img{
+        width: 450px;
+        height: 500px;
+    }
+    .right_special h2{
+        font-size: 3rem;
+    }
+    .right_special p{
+        font-size: 1.5rem;
+    }
+    .right_special #desc_lobster{
+        font-size: 1rem;
+    }
+    #menubar h2{
+        font-size: 3rem;
+    }
+    .menu1{
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .menu1:hover{
+        border: 1px solid var(--font);
+    }
+    .item_detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .item_detail{
+        margin: 20px;
+    }
+    .item_detail h4{
+        margin: 5px;
+    }
+    .right_abt img{
+        width: 450px;
+    }
+    .left_contact h2{
+        font-size: 2.5rem;
+    }
+    .connect p,
+    .connect address    {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width:500px){
+    .left_special img{
+        width: 400px;
+        height: 450px;
+    }
+    .right_abt img{
+        width: 400px;
+        height: 450px;
+    }
+}
+
+@media all and (max-width:450px){
+    nav{
+        right: -70%;
+        width: 70%;
+    }
+    #home{
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+    }
+    nav{
+        right: -100%;
+        width: 100%;
+    }
+    header h2 img{
+        height: 30px;
+        width: 30px;
+    }
+    header h2{
+        font-size: 1.8rem;
+    }
+    #menu,
+    #close{
+        font-size: 1.2rem;
+    }
+    #home h3{
+        font-size: 2.6rem;
+    }
+    #home p{
+        font-size: 1rem;
+    }
+    #home button{
+        font-size: inherit;
+    }
+    #offer h2{
+        font-size: 1.8rem;
+    }
+    .imgs p{
+        font-size: 2rem;
+    }
+    .imgs #opt{
+        font-size: 1rem;
+    }
+    .left_special img{
+        width: 300px;
+        height: 350px;
+        border: none;
+    }
+    .right_special button,
+    #menubar button,
+    #about button{
+        font-size: inherit;
+    }
+    #menubar h2{
+        font-size: 1.8rem;
+    }
+    .menus,
+    .menus1{
+        width: 100%;
+    }
+    .menu1{
+        width: 100%;
+    }
+    .left_abt p{
+        font-size: 1rem;
+    }
+    .right_abt img{
+        width: 300px;
+        height: 350px;
+    }
+    .left_contact h2,
+    .right_contact p{
+        font-size: 1.8rem;
+    }
+    .connect address,
+    .connect p{
+        font-size: 1rem;
+    }
+    form{
+        padding: 0px;
+    }
+    .right_contact form input,
+    #textarea{
+        width: 100%;
+    }
+    .right_contact form button{
+        font-size: inherit;
+    }
+    #limit{
+        right: 5%;
+    }
+}
+
